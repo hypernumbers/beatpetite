@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Beat Petite</title>
+        <meta name="author" content="Stuart Memo"/>
+        <link rel="icon" href="images/favicon.ico"/>
+        <link rel="stylesheet" href="styles/master.css"/>
+        <!--
+        |_) _  _._|_  |_) _ _|_ o_|_ _ 
+        |_)(/_(_| |_  |  (/_ |_ | |_(/_ by Stuart Memo (Question Park), October 2010.
+        -->
+    </head>    
+    <body>
+        <script>
+            for (var i=0; i<4; i++) {
+                document.write("<audio id=\"drumtype-0-" + i + "\" src=\"samples\/linndrum\/kick.ogg\" preload=\"auto\" autobuffer><\/audio>");
+                document.write("<audio id=\"drumtype-1-" + i + "\" src=\"samples\/linndrum\/snare.ogg\" preload=\"auto\" autobuffer><\/audio>");
+                document.write("<audio id=\"drumtype-2-" + i + "\" src=\"samples\/linndrum\/chh.ogg\" preload=\"auto\" autobuffer><\/audio>");
+                document.write("<audio id=\"drumtype-3-" + i + "\" src=\"samples\/linndrum\/ohh.ogg\" preload=\"auto\" autobuffer><\/audio>");
+                document.write("<audio id=\"drumtype-4-" + i + "\" src=\"samples\/linndrum\/tomh.ogg\" preload=\"auto\" autobuffer><\/audio>");
+                document.write("<audio id=\"drumtype-5-" + i + "\" src=\"samples\/linndrum\/toml.ogg\" preload=\"auto\" autobuffer><\/audio>");
+                document.write("<audio id=\"drumtype-6-" + i + "\" src=\"samples\/linndrum\/ride.ogg\" preload=\"auto\" autobuffer><\/audio>");
+                document.write("<audio id=\"drumtype-7-" + i + "\" src=\"samples\/linndrum\/cow.ogg\" preload=\"auto\" autobuffer><\/audio>");                
+            }
+        </script>
+        <div id="hidden-drums">
+            <audio src="samples/808/kick.ogg" preload="auto" autobuffer></audio>
+            <audio src="samples/808/snare.ogg" preload="auto" autobuffer></audio>
+            <audio src="samples/808/chh.ogg" preload="auto" autobuffer></audio>
+            <audio src="samples/808/clave.ogg" preload="auto" autobuffer></audio>
+            <audio src="samples/808/rim.ogg" preload="auto" autobuffer></audio>
+            <audio src="samples/808/cymbal.ogg" preload="auto" autobuffer></audio>
+            <audio src="samples/808/clap.ogg" preload="auto" autobuffer></audio>
+            <audio src="samples/808/cow.ogg" preload="auto" autobuffer></audio>
+            <audio src="samples/909/kick.ogg" preload="auto" autobuffer></audio>
+            <audio src="samples/909/snare.ogg" preload="auto" autobuffer></audio>
+            <audio src="samples/909/chh.ogg" preload="auto" autobuffer></audio>
+            <audio src="samples/909/ohh.ogg" preload="auto" autobuffer></audio>
+            <audio src="samples/909/tomh.ogg" preload="auto" autobuffer></audio>
+            <audio src="samples/909/rim.ogg" preload="auto" autobuffer></audio>
+            <audio src="samples/909/ride.ogg" preload="auto" autobuffer></audio>
+            <audio src="samples/909/clap.ogg" preload="auto" autobuffer></audio>
+        </div>
+        <div id="container">
+            <h1>Beat Petite!</h1>
+            <h2><span id="bpm">120</span><span>bpm</span></h2>
+            <ul id="footer">
+                <li id="drum-select">
+                    <ul>
+                        <li title="909">TR-909</li>
+                        <li title="808">TR-808</li>
+                        <li title="linndrum" id="selected">Linndrum</li>
+                    </ul>
+                </li>
+                <li><input id="stop" type="button" value="Stop"/></li>
+                <li><input id="start" type="button" value="Start"/></li>
+            </ul>
+            <div id="credits">
+                <p><span>Beat Petite - a mini drum machine for your browser.</span><a href="http://questionpark.com">Question Park</a> #1</p>
+            </div>
+        </div>
+        <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/raphael-min.js"></script>
+        <script src="scripts/beatpetite-min.js"></script>
+    </body>
+</html>
